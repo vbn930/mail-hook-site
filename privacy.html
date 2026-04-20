@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mail-hook Privacy Policy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Noto Sans KR", system-ui, sans-serif;
+      background: #f5f7fb;
+      color: #162033;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #d8e0ea;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 40px rgba(28, 42, 62, 0.08);
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { font-size: 40px; margin: 0 0 8px; }
+    h2 { margin-top: 28px; font-size: 22px; }
+    p, li { color: #506070; }
+    a { color: #1f6feb; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: April 19, 2026</p>
+
+      <p>
+        mail-hook is a personal email automation tool that reads Gmail messages authorized by the user,
+        generates summaries and classifications, and sends Discord notifications.
+      </p>
+
+      <h2>Information processed</h2>
+      <ul>
+        <li>Email subject lines, sender information, snippets, body text, thread information, and attachment metadata.</li>
+        <li>Operational metadata such as message IDs, processing status, runtime history IDs, and error records.</li>
+      </ul>
+
+      <h2>How information is used</h2>
+      <ul>
+        <li>To detect new Gmail messages.</li>
+        <li>To summarize and classify messages for notification delivery.</li>
+        <li>To send Discord notifications requested by the user.</li>
+        <li>To maintain deduplication, retry, and operational monitoring records.</li>
+      </ul>
+
+      <h2>Third-party services</h2>
+      <ul>
+        <li>Google Gmail API is used to access authorized Gmail data.</li>
+        <li>OpenAI API may process sanitized message content to generate summaries and classifications.</li>
+        <li>Discord Webhook receives formatted notification payloads.</li>
+        <li>Google Cloud Firestore stores runtime state, sender history, processed message records, and error events.</li>
+      </ul>
+
+      <h2>Data retention</h2>
+      <p>
+        Operational records may be retained in Firestore for reliability, deduplication, history, and troubleshooting.
+        Data may be updated or removed by the operator as needed.
+      </p>
+
+      <h2>User choices</h2>
+      <p>
+        Users may revoke Gmail access for this application at any time through their Google Account permissions settings.
+        Revoking access prevents the app from reading Gmail data going forward.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions or deletion requests, contact
+        <a href="mailto:vbn9302@gmail.com">vbn9302@gmail.com</a>.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
